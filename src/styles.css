@@ -1,0 +1,172 @@
+body{
+    font-family:'Courier New' ;
+}
+body input{
+    border-radius: 7px;
+    border: 1px solid #a68a64; 
+}
+body button{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius:5px ;
+    border:none
+}
+
+.createStudentForm{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #a4ac86;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 15px;
+
+}
+.createStudentForm button {
+    width: 80px;
+    height: 35px;
+}
+.createStudentForm input {
+
+    width:60px;
+    height: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    gap: 20px;
+  }
+
+  .container_izquierda h1,h2{
+    margin-left: 30px;
+
+  }
+
+   ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  
+.studentsList li{
+display: grid;
+
+background-color:#b6ad90;
+border-radius: 8px;
+padding: 15px 15px 15px 40px;
+
+}
+.promedio{
+    background-color: #c2c5aa;
+    border-radius: 4px;
+    display: flex;
+    justify-self: flex-end;
+    width:60%;
+    height :150%;
+    align-items: center;
+    box-shadow: 2px 2px 3px 1px rgb(136, 133, 133);
+}
+.notes{
+    background-color:white;
+    border-radius: 4px;
+    width:70%;
+    margin: 3px 0 0 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.idName{
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.container_derecha{
+    margin-top: 60px;
+    margin-right: 40px;
+}
+
+.nombre{
+    display: flex;
+    
+    align-self: start;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.nombre input{
+    width: 210px;
+}
+.notas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+.updateStudentForm {
+    background-color: #c2c5aa;
+    border-radius: 8px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    gap:15px
+}
+
+.deleteStudentForm {
+    background-color: #a68a64;
+    border-radius: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+.nombre_id{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.notas_update {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 
+}
+
+.notas_update input{
+    width: 66px;
+    height: 24px;
+    gap:12px
+}
+
+.boton_update{
+    display: flex;
+    align-self: center;
+    
+}
+.updateStudentForm button {
+    width: 80px;
+    height: 35px;
+}
+
+.deleteStudentForm button {
+    margin-left: 14px;
+}
+
+.createStudentForm button:hover  {
+    background-color: #582f0e;
+    transition: background-color 0.8s ease, color 0.8s ease, font-size 0.8s ease;
+    color: white;
+    font-size: 15px;
+}
+.updateStudentForm button:hover  {
+    background-color: #582f0e;
+    transition: background-color 0.8s ease, color 0.8s ease, font-size 0.8s ease;
+    color: white;
+    font-size: 15px;
+}
+.deleteStudentForm button:hover {
+    background-color: rgb(235, 84, 84);
+    color:white;
+    
+}
