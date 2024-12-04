@@ -1,6 +1,6 @@
 # Prueba Técnica LER
 
-Este proyecto consiste en un microservicio backend con una base de datos PostgreSQL y un frontend que muestra la información. A continuación se detallan los pasos para ejecutar tanto el backend como el frontend, y cómo conectar la base de datos localmente.
+Este proyecto consiste en un microservicio backend con una base de datos PostgreSQL y un frontend que muestra la información. A continuación se detallan los pasos para ejecutar  el backend, y cómo conectar la base de datos localmente.
 
 
 ## Requisitos
