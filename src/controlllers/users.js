@@ -4,19 +4,19 @@ const createUser = async (req, res) => {
     try {
       const users = req.body;
   
-      // Verifica si el cuerpo es un array
+
       if (!Array.isArray(users) || users.length === 0) {
         return res.status(400).json({ message: "Debes enviar un array de usuarios." });
       }
   
-      // Validar cada usuario en el array
+    
       for (const user of users) {
         if (!user.nombre || !user.correo || !user.edad) {
           return res.status(400).json({ message: "Todos los campos son obligatorios para cada usuario." });
         }
       }
   
-      // Crear todos los usuarios en la base de datos
+      
       const newUsers = await Usuarios.bulkCreate(users);
   
       res.status(201).json({
@@ -29,10 +29,10 @@ const createUser = async (req, res) => {
     }
   };
 
-  // Obtener todos los usuarios (GET)
+  
 const getUsers = async (req, res) => {
     try {
-      const users = await Usuarios.findAll(); // Obtener todos los usuarios de la base de datos
+      const users = await Usuarios.findAll(); 
       res.status(200).json({
         message: "Usuarios obtenidos exitosamente",
         usuarios: users,
